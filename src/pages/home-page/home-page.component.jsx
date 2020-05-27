@@ -8,7 +8,6 @@ const HomePage = (props) => {
   console.log(`HomePage props: ${JSON.stringify(props)}`)
   return (
     <div className='homepage'>
-      <Link to='/hats'>HATS link</Link>
       <Directory />
     </div>
   )
