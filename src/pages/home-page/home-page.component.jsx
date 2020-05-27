@@ -1,12 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import './home-page.styles.scss'
 import Directory from '../../components/directory/directory.component'
 
-const HomePage = () => (
-  <div className='homepage'>
-    <Directory />
-  </div>
-)
-
+const HomePage = (props) => {
+  console.log(`HomePage props: ${JSON.stringify(props)}`)
+  return (
+    <div className='homepage'>
+      <Link to='/hats'>HATS link</Link>
+      <Directory />
+    </div>
+  )
+}
 export default HomePage
